@@ -1,0 +1,6 @@
+<%=form_for @nutrients do |f|%>
+<%= f.label :name %>
+<%= f.text_field :name %>
+<%= f.collection_select food_id, Foodd.all, :id, :name %>
+<%= f.submit %>
+<% end %>

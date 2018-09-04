@@ -1,0 +1,7 @@
+<h1><%=foodd.name%></h1>
+
+<ul>
+  <%@foodd.nutrients.each do |nutrient|%>
+  <li><%=link_to nutrient.name, nutrient_path(nutrient)%></li>
+  <%end%>
+</ul>
